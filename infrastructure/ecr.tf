@@ -1,6 +1,6 @@
 resource "aws_ecr_repository" "nestjs-repo" {
   name                 = "nestjs-repo"
-  image_tag_mutability = "IMMUTABLE"
+  image_tag_mutability = "MUTABLE"
 }
 
 resource "aws_ecr_repository_policy" "nestjs-repo-policy" {
